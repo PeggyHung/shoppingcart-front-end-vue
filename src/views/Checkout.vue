@@ -1,13 +1,13 @@
 <template>
   <main class="main-container">
     <Stepper ref="stepperRef" />
-    <Form ref="formRef" @afterpayclick="payclick" />
+    <Form ref="formRef" @afterpayclick="payclick" /> 
+    <Cart ref="cartRef" :shipFee="shipPrice" />
     <Btn
       ref="btnRef"
       @after-click="handleAfterClick"
       @before-click="handleBeforeClick"
     />
-    <Cart ref="cartRef" :shipFee="shipPrice" />
   </main>
 </template>
 
